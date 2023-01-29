@@ -1,0 +1,139 @@
+/* Esto es el header, con el logo y la parte de arriba con el about us, contact...*/
+header {
+  padding: 20px;
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  margin-bottom: px;
+  height: 125px;
+}
+
+#logo-container {
+  position: absolute;
+  align-items: center;
+  object-position: center;
+  margin-left: 30%;
+  margin-top: -8.5%;
+}
+
+#logo-container img {
+  width: 500px; /* ajusta el tamaño del logo */
+  height: auto; /* mantén la relación de aspecto */
+}
+
+#logo-container img:hover{
+  filter: opacity(80%);
+  transition-duration: 0,3s;
+}
+
+.bi-bi-cart{
+  width: 20px;
+  height: auto;
+  color: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 35px;
+
+
+}
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+}
+
+nav a:hover {
+  color: #777;
+}
+
+nav a:active{
+  color: aliceblue;
+}
+
+/* A partir de aqui empieza el tema de los productos*/
+
+.b-example-divider-header-hero {
+  height: 1rem;
+  background-color: rgba(220, 216, 216, 0.148);
+  border: solid rgba(181, 195, 177, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(196, 191, 191, 0.1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+/*Esta es la parte del hero*/
+.hero-container {
+  position: relative;
+  width: 90%;
+  height: 100vh; /* 100% de la altura de la pantalla */
+  align-items: center;
+  object-position:center;
+  margin-left: 5%;
+  margin-top: 2%;
+  padding: 0%;
+
+}
+
+
+.hero-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* esto asegura que la imagen se ajuste al tamaño del contenedor */
+  object-position: center; /* esto centra la imagen en el contenedor */
+  min-width: 0%;
+}
+
+
+/*productos*/
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+.product img {
+  width: 200px; /* establece el ancho de la imagen en 200px */
+  height: auto; /* mantiene la relación de aspecto de la imagen */
+  display: inline-block; /* hace que las imágenes se muestren en línea */
+  border-radius: 10px; /* establece los bordes redondos a 10px */
+  border: 2px solid #000; /* establece un borde sólido de 5px y color negro */
+  max-width: 200px;
+  max-height: 250px;
+  margin: 50px;
+}
+
+.product img:hover{
+  border-color: grey;
+}
+
+
+.product a :hover{
+  filter: brightness(75%);
+}
+
+.products {
+  display: flex; /* establece el display como flex para que los elementos se alineen en línea */
+  justify-content: center; /* centra los elementos div de productos en el eje horizontal del contenedor */
+  align-items: center; /* centra los elementos div de productos en el eje vertical del contenedor */
+  flex-wrap: wrap; /* para que se adapten a la pantalla y se vuelvan a colocar en otra linea si no caben en una sola */
+  margin-bottom: 10%;
+  margin-top: 3%;
+  z-index: 1;
+  transition: 0.2s;
+
+}
+
+.products p{
+  text-align: center;
+  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: -5%;
+}
+
+
